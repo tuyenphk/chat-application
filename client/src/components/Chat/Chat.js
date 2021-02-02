@@ -1,6 +1,7 @@
 import React, {useState} from "react"
-import io from "socket.io-client";
+import io from "socket.io-client"
 
+import {InfoBar} from '../InfoBar/InfoBar'
 import "./Chat.css"
 export const Chat = ({location}) =>{
     const [name, setName] = useState('');
@@ -11,11 +12,11 @@ export const Chat = ({location}) =>{
 
     return(
         <div className="outerContainer">
-            <TextContainer users={users} />
+            {/* <TextContainer users={users} /> */}
             <div className="container">
                 <InfoBar room={room} />
-                <Messages messages={messages} name={name} />
-                <Input message={message} setMessage={setMessage} sendMessage={sendMessage} />
+                {/* <Messages messages={messages} name={name} />
+                <Input message={message} setMessage={setMessage} sendMessage={sendMessage} /> */}
             </div>
         </div>
     )
