@@ -22,8 +22,9 @@
     padding-left: 10px;
   }
   
-  .textContainer h1 {
+  .textContainer h1 h2{
     margin-bottom: 0px;
+  
   }
   
   @media (max-width: 425px) and (max-width: 1200px) {
