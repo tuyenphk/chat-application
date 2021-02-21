@@ -4,6 +4,7 @@ import closeIcon from '../../icons/closeIcon.png'
 
 import './InfoBar.css'
 export const InfoBar = ({room}) => {
+    return(
     <div className="infoBar">
         <div className="leftInnerContainer">
             <img className="onlineIcon" src={onlineIcon} alt="online icon" />
@@ -13,4 +14,5 @@ export const InfoBar = ({room}) => {
             <a href='/'><img src={closeIcon} alt="closeIcon" /></a>
         </div>
     </div>
+    );
 }
